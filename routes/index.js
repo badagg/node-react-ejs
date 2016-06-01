@@ -7,7 +7,7 @@ var Hello = React.createFactory(require("../components/Hello.jsx"));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	var reactHtml = ReactDom.renderToString(Hello()); //这一步报错
+	var reactHtml = ReactDom.renderToString(Hello());
 	res.render('index', { html:reactHtml });
 });
 
